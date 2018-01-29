@@ -4,7 +4,7 @@ namespace SkillValue_SensitiveCells
 {
     public class CellSimulator
     {
-        private int _count;
+        private readonly int _count;
         public CellSimulator(int numberOfSimulations)
         {
             _count = numberOfSimulations;
@@ -17,7 +17,7 @@ namespace SkillValue_SensitiveCells
                 inputArray = CalculateStates(inputArray);
             }
             
-            foreach (var field in inputArray)
+            foreach (v(ar field in inputArray)
             {
                 Console.Write(field ? $"1 " : $"0 ");
             }
