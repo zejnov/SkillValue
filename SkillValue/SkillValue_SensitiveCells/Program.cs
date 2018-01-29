@@ -1,10 +1,17 @@
-﻿namespace SkillValue_SensitiveCells
+﻿using System;
+
+namespace SkillValue_SensitiveCells
 {
     class Program
     {
         static void Main(string[] args)
         {
-            new CellSimulator(5).Execute();
+            var exampleArray = new[] {true, false, true, true,};
+            new CellSimulator(2).Execute(exampleArray);
+
+
+            
+            Console.ReadKey();
         }
     }
 }
